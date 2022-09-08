@@ -1,0 +1,101 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 32px;
+    background-color: rgba(125, 222, 235, 0.473);
+}
+
+.todo_title {
+    font-size: 2.5rem;
+}
+
+.todo_div {
+    display: flex;
+    margin-top: 16px;
+}
+
+.todo_input {
+    padding: 4px 6px;
+    font-size: 0.9rem;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+}
+
+.todo_btn {
+    padding: 4px 6px;
+    font-size: 0.9rem;
+    border-radius:0 4px 4px 0;
+    border: none;
+    outline: none;
+    background-color: rgb(129, 194, 251);
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.todo_btn:hover {
+    background-color: rgb(57, 149, 231);
+}
+
+.todo_container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: rgba(247, 179, 90, 0.336);
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(229, 195, 151);
+}
+
+.todo:last-child {
+    border: none;
+}
+
+.todo_left{
+    display: flex;
+    align-items: center;
+}
+
+.todo_text, .todo_edit {
+    margin-left: 8px;
+}
+
+.todo_cb:checked ~ .todo_text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo_delete {
+    background-color: red;
+    border: outset 2px rgb(189, 5, 5);
+    border-radius: 5px;
+}
+
+.todo_edit {
+    background-color: rgba(35, 229, 35, 0.799);
+    margin-right: 8px;
+    border-radius: 5px;
+    border: outset 2px green;
+}
+
+.weather {
+    display: flex;
+    justify-content:right;
+}
